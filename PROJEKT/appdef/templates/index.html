@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Köszöntelek az oldalon</h1>
+    <div>Válassz az alábbi lehetőségek közül:</div>
+    <ul>
+        <li>
+            Adatok feltöltése:
+            <ul>
+                <li><a href="/feltoltes/kiado">Kiadók feltöltése</a></li>
+                <li><a href="/feltoltes/film">Filmek feltöltése</a></li>            
+            </ul>
+        </li>
+        <li>Feladatok:
+            <ul>
+                <li><a href="/feladat/2">2. feladat</a></li>
+                <li><a href="/feladat/3">3. feladat</a></li>
+                <li><a href="/feladat/4">4. feladat</a></li>
+                <li><a href="/feladat/5">5. feladat</a></li>
+                <li><a href="/feladat/6">6. feladat</a></li>
+                <li><a href="/feladat/7">7. feladat</a></li>
+            </ul>
+        </li>
+        
+    </ul>
+</body>
+</html>

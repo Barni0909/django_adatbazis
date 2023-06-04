@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Feladat2</title>
+</head>
+<body>
+    <table>
+        {% for film in filmek %} 
+        <tr>
+            <td>
+                {{film.cim}}
+            </td> 
+            <td>
+                {{film.kiadasiev}}
+            </td>
+        </tr>              
+        {% endfor %}
+    </table>   
+</body>
+</html>
